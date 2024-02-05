@@ -28,8 +28,12 @@ h2 {
 }
 
 img {
-    width: 14.06 px;
-    height: 23.86px;
+    height: 15px;
+}
+
+.collapse_ouvert, .collapse_fermer {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .collapse_ouvert {
@@ -50,10 +54,11 @@ img {
     min-height: 100px;
     padding: 25px 10px 10px 10px;
     visibility: visible;
+    transition: 0.5s;
 }
 
 .collapse_description_fermer {
-    visibility: hidden;
+    /* visibility: hidden; */
     opacity: 0;
     height: 0;
 }

@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/home/home';
-// import Accommodation from './pages/accommodation/Accommodation';
-// import About from './pages/about/About';
-// import Error from './pages/error/Error';
+import Home from './pages/home';
+// import Accommodation from './pages/accommodation';
+import About from './pages/about';
+import Error from './pages/error';
 
 const router = createBrowserRouter([
 	{
@@ -12,16 +12,16 @@ const router = createBrowserRouter([
 	// {
 	// 	path: "/accommodation/:id",
 	// 	element: <Accommodation />,
-  //   	errorElement: <Error />
+    // 	errorElement: <Error />
 	// },
-	// {
-	// 	path: '/about',
-	// 	element: <About />
-	// },
-	// {
-	// 	path: "*",
-	// 	element: <Error />
-	// },
+	{
+		path: '/about',
+		element: <About />
+	},
+	{
+		path: "*",
+		element: <Error />
+	},
 ]);
 
 function App() {

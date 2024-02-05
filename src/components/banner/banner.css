@@ -1,0 +1,47 @@
+.banner {
+    border-radius: 25px;
+    position: relative;
+    height: 223px;
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.banner_img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_background {
+    background-color: black;
+    border-radius: 25px;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner_text {
+    color: #ffffff;
+    font-size: 48px;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        margin: 40px 2.5%;
+        width: 95%;
+        border-radius: 10px;
+    } 
+    .banner_text {
+        font-size: 24px;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+}

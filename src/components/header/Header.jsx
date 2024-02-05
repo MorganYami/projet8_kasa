@@ -8,9 +8,9 @@ const Header = () => {
 
     return (
         <header>
-            <img src={Logo} alt='Logo' />
+            <img className='logoKasa' src={Logo} alt='Logo' />
             <nav>
-                <NavLink to='/' className={currentRoute === '/' ? 'header_lien header_lien_souligne' : 'header_lien header_lien_vide'}>Acceuil</NavLink>
+                <NavLink to='/' className={currentRoute === '/' ? 'header_lien header_lien_souligne' : 'header_lien header_lien_vide'}>Accueil</NavLink>
                 <NavLink to='/about' className={currentRoute === '/about' ? 'header_lien header_lien_souligne' : 'header_lien header_lien_vide'}>A propos</NavLink>
             </nav>
         </header>

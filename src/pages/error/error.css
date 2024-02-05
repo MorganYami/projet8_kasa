@@ -1,0 +1,43 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ff6060;
+    font-size: 288px;
+    margin: 0;
+}
+
+.error_texte {
+    color: #ff6060;
+    font-size: 36px;
+    margin: 0;
+}
+
+.error_lien {
+    font-weight: 700;
+    color: #ff6060;
+    font-size: 18px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 96px;
+    }
+
+    .error_texte{
+        font-size: 18px;
+        padding-top: 10px;
+        margin: 0px 25%;
+        text-align: center;
+    }
+
+    .error_lien {
+        font-size: 18px;
+    }
+}

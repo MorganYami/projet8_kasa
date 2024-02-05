@@ -1,0 +1,41 @@
+.card {
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+    min-height: 340px;
+}
+
+.card:hover {
+    background: linear-gradient(180deg, #ff6060 85%, black 100%);
+    cursor: pointer;
+}
+
+.card_img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card:hover > .card-img {
+    opacity: 0.30;
+}
+
+.card_background {
+    background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
+    border-radius: 10px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card_title {
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    left: 20px;
+    margin-right: 20px;
+    position: absolute;
+}
