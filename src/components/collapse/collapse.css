@@ -31,6 +31,10 @@ img {
     height: 15px;
 }
 
+.logement_collapse .collapse {
+    width: 48%;
+}
+
 .collapse_ouvert, .collapse_fermer, .collapse_description_ouvert, .collapse_description_fermer {
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -49,18 +53,16 @@ img {
     color: #ff6060;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* height: 75%; */
-    /* margin-top: -10px; */
-    /* min-height: 100px; */
     padding: 20px 10px ;
-    /* visibility: visible; */
 }
 
 .collapse_description_fermer {
-    /* visibility: hidden; */
     opacity: 0;
     height: 0;
-    translate: 0px -20px;
+}
+.collapse_description_fermer .collapse_texte {
+    transition: 0.1s;
+    opacity: 0;
 }
 
 .collapse_texte {

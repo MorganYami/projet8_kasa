@@ -1,77 +1,50 @@
-.collapse {
-    background-color: #ff6060;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    height: 25%;
+.carrousel {
+    width: 80%;
+    margin: 40px 10%;
+    position: relative;
 }
 
-.accoStyle {
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 45%; 
-    height: 25%;
+.carrousel_img {
+    border-radius: 15px;
+    height: 415px;
+    object-fit: cover;
+    width: 100%
+}
+.fleche {
+    position: absolute;
+    width: 46.68px;
+    height: 79.2px;
+    z-index: 1;
 }
 
-.collapse_h2_img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 47px;
+.carrousel_flecheG {
+    margin-left: 25px;
+    top: 40%;
 }
 
-h2 {
+.carrousel_flecheD {
+    margin-right: 25px;
+    right: 0%;
+    top: 40%;
+}
+
+.nbImg {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
-    font-size: 24px;
-}
-
-img {
-    width: 14.06 px;
-    height: 23.86px;
-}
-
-.collapse_ouvert {
-    transform: rotate(0deg);
-}
-
-.collapse_fermer {
-    transform: rotate(180deg);
-}
-
-.collapse_description_ouvert {
-    background-color: #F7F7F7;
-    color: #ff6060;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 75%;
-    margin-top: -10px;
-    min-height: 100px;
-    padding: 25px 10px 10px 10px;
-    visibility: visible;
-}
-
-.collapse_description_fermer {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-}
-
-.collapse_texte {
-    color: #ff6060;
+    font-weight: 500;
     font-size: 18px;
 }
 
-@media screen and (max-width: 700px) { 
-    .collapse_description {
-        padding-bottom: 25px;
-    } 
-    
-    .accoStyle {
-        background-color: #ff6060;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        width: 100%; 
+@media screen and (max-width: 700px) {
+    .carrousel {
+        margin: 40px 2.5%;
+        width: 95%;
+    }
+
+    .carrousel_flecheD {
+        right: 2.5%;
     }
 }
