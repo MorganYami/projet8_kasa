@@ -64,10 +64,19 @@
 }
 
 @media screen and (max-width: 700px) {
+
+    .carrousel .nbImg {
+        display: none;
+    }
+
     .logement_groupe_info_proprio {
         flex-direction: column;
         width: 95%;
         margin: 40px 2.5%;
+    }
+
+    .logement_titre {
+        width: auto;
     }
     
     .logement_info {
@@ -76,6 +85,15 @@
 
     .logement_nom {
         margin: 0;
+    }
+
+    .tags {
+        min-width: 55px;
+    }
+
+    .etoile {
+        width: 21px;
+        height: 21px;
     }
 
     .logement_proprio {
@@ -91,5 +109,9 @@
         margin: 40px 2.5%;
         display: flex;
         flex-direction: column;
+    }
+
+    .logement_collapse .collapse {
+        width: auto;
     }
 }

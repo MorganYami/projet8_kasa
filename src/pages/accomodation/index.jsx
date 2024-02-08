@@ -13,16 +13,16 @@ import './accomodation.css';
 
 const Accommodation = () => {
 
-    // Récupération du logement avec useParams
+    // Logement recuperation with useParams
     const identifiant =useParams();
     const logementId = ListAccommodation.find((logement) => logement.id === identifiant.id);
 
-    //Gestion des Tags
+    //Tags gestion
     const tags = logementId.tags.map((tags, index) => {
         return <Tags key={index} name={tags} />
     });
 
-    // Gestion des notes
+    // Notes gestion
     let notes = [];
     let etoilePleine = true;
     for (let i = 0; i < 5; i++) {
@@ -37,7 +37,7 @@ const Accommodation = () => {
         }
     }
 
-    // Gestion des équipements
+    // Equipements gestion
     const listEquipement = logementId.equipments.map((equipments, index) => {
         return <li key={index}>{equipments}</li>
     });
